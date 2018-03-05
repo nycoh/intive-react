@@ -1,0 +1,235 @@
+@import "bootstrap/back";
+@import "common";
+@import "~react-select/scss/default";
+@import "footer";
+@import "buttons";
+@import "form";
+@import "tables";
+@import "dropzone";
+@import "credentials";
+@import "review";
+
+html, body {
+  overflow-y: auto;
+  color: $text-primary-color;
+  background-color: $light-primary-color;
+}
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+main {
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  height: 86%;
+  overflow-y: auto;
+}
+
+select.max {
+  max-width: 300px;
+  padding: 6px 2px;
+}
+
+a {
+  color: $text-primary-color;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: $accent-color;
+    text-decoration: none;
+  }
+}
+
+.fa-trash {
+  color: #f00;
+}
+
+.fa-arrows-h {
+  margin-top: 150px;
+  font-size: 50px;
+}
+
+.row-assign {
+  margin: 10px 0;
+}
+
+label {
+  display: inline;
+  font-weight: normal;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+// Solution scroll horizontal
+@media (min-width: 768px) {
+  .container {
+    width: inherit;
+  }
+}
+
+.box-container {
+  @media screen and(min-height: 500px) {
+    min-height: 40vh;
+    max-height: 40vh;
+  }
+  @media screen and(min-height: 680px) {
+    min-height: 48vh;
+    max-height: 48vh;
+  }
+  @media screen and(min-height: 800px) {
+    min-height: 62vh;
+    max-height: 62vh;
+  }
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 20px 0;
+  overflow: auto;
+  background-color: $divider-color;
+  border: 1px solid $dark-primary-color;
+  border-radius: 2px;
+  .col-sm-1, .col-sm-11 {
+    padding: 0;
+  }
+}
+
+.btn-asign {
+  margin-bottom: 5px;
+}
+
+.pie-chart {
+  background-color: $light-primary-color;
+}
+
+.no-padding {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.dwelling-number {
+  margin-top: 20px;
+  border-left: solid 1px rgba(0, 0, 0, .4);
+}
+
+.vertical-margin {
+  margin: 20px 0;
+}
+
+.push-down {
+  margin-top: 30px;
+}
+
+.navbar {
+  height: 52px;
+  text-transform: capitalize;
+  background-color: $dark-primary-color;
+  border-radius: 0;
+  li {
+    font-size: 14px;
+    list-style-type: none;
+    background-color: $dark-primary-color;
+    span {
+      margin-right: 5px;
+    }
+    a {
+      position: relative;
+      display: inline-block;
+      line-height: 44px;
+      color: $light-primary-color;
+      text-decoration: none;
+      &:hover {
+        color: $accent-color;
+        background-color: $dark-primary-color;
+      }
+    }
+  }
+  h3 {
+    margin: 8px 25px 0 0;
+    span {
+      margin-right: 0;
+    }
+    .pp {
+      color: $accent-color;
+    }
+  }
+}
+
+.logo-header {
+  color: $light-primary-color;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: $dark-primary-color;
+}
+
+.navbar-inverse {
+  background-color: $dark-primary-color;
+  border-color: $dark-primary-color;
+  .navbar-nav > li > a {
+    color: $light-primary-color;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.dropdown-menu {
+  padding: 0;
+  border: 1px solid $light-primary-color;
+}
+
+.links {
+  color: $accent-color;
+}
+
+.pagination {
+  margin: 0;
+}
+
+.form-group {
+  margin: 0;
+}
+
+.alert {
+  padding: 6px;
+  margin: 0;
+}
+
+form.form-inline .form-group {
+  margin: 10px 30px 10px 0;
+}
+
+.popover {
+  z-index: 1000;
+}
+
+.modal-content {
+  box-shadow: 0;
+  .modal-header {
+    margin: 1em 1em -1em;
+    border-bottom: 0;
+    .modal-title {
+      font-size: 21px;
+      font-weight: 800;
+    }
+  }
+  .modal-body {
+    margin: 0 1em;
+    border: 0;
+  }
+  .modal-footer {
+    border-top: 0;
+  }
+}
